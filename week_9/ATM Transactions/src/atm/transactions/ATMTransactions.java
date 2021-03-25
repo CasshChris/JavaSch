@@ -39,6 +39,11 @@ public class ATMTransactions {
         // Main.5 :: Call checkUserChoice()
         checkUserChoice();
         
+        // Main.6 :: Call performATMOperation()
+        performATMOperation();
+
+        // Main.7 :: Call printFooters()
+        printFooters();
     }
     
 }
