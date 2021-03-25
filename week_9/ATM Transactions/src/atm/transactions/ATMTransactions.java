@@ -13,7 +13,12 @@ public class ATMTransactions {
     /*Variables*/
     // v :: Declare global Var
     public static Double balance = 5000.0;
-    
+    public static Double withdraw, depost;
+    public static int choice = 0;
+    public final static String USERNAME = "Mary100";
+    public final static String PASSWORD = "ATM";
+
+
 
     public static void main(String[] args) {
         // 
