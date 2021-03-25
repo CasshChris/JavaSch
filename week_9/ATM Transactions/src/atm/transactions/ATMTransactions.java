@@ -15,13 +15,30 @@ public class ATMTransactions {
     public static Double balance = 5000.0;
     public static Double withdraw, depost;
     public static int choice = 0;
+    // v.2 :: Declare user & password global var(s)
     public final static String USERNAME = "Mary100";
     public final static String PASSWORD = "ATM";
+    public static String userName = "";
+    public static String passWord = "";
 
-
-
+    /*Classes*/
+    // c :: Define Classes(c)
+    // c.2 :: Define Main Class
     public static void main(String[] args) {
-        // 
+        /*Main*/
+        // Main :: Call Classes
+        // Main.2 :: Call printHeadings()
+        printHeadings();
+
+        // Main.3 :: Call checkLogIn()
+        checkLogIn();
+
+        // Main.4 :: Call printATMMainMenu()
+        printATMMainMenu();
+
+        // Main.5 :: Call checkUserChoice()
+        checkUserChoice();
+        
     }
     
 }
