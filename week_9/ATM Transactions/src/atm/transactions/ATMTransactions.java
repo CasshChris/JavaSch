@@ -10,6 +10,10 @@ import java.util.Arrays; // i.2 :: import Arrays
 import java.util.Scanner; // i.3 :: import Scanner
 
 public class ATMTransactions {
+    /*Variables*/
+    // v :: Declare global Var
+    public static Double balance = 5000.0;
+    
 
     public static void main(String[] args) {
         // 
