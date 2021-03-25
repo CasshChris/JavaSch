@@ -1,4 +1,0 @@
-# School Java Hw
-## This is my java homework
-
-### I am using Apache NetBeans
