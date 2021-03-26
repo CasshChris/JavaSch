@@ -7,5 +7,6 @@
 - [x] ArrayBinarySearch p. 584
 - [x] SumNumberInArray p. 587
 - [x] MilesRunArray p. 592
-- [x] ATMTransactions p. 599 - [ ] modify
+- [x] ATMTransactions p. 599 
+    - [] *modify*
 - [ ] DoingMathOn2NumberUsingMethods p. 618
