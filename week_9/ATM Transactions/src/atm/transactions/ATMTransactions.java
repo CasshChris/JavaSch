@@ -1,4 +1,4 @@
-/**
+ /*
  * Project Name: Simple ATM Machine Transaction Java Project to Display the ATM Transaction
  * Programmer: Student - Christian Alvarez
  * Date: 03-24-2021
