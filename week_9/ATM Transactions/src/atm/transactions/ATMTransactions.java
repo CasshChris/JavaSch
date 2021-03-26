@@ -13,11 +13,11 @@ public class ATMTransactions {
     /*Variables*/
     // v :: Declare global Var
     public static Double balance = 5000.0;
-    public static Double withdraw, depost;
+    public static Double withdraw, deposit;
     public static int choice = 0;
     // v.2 :: Declare user & password global var(s)
-    public final static String USERNAME = "Mary100";
-    public final static String PASSWORD = "ATM";
+    public final static String USERNAME = "ChristianA";
+    public final static String PASSWORD = "07061999";
     public static String userName = "";
     public static String passWord = "";
 
@@ -135,7 +135,7 @@ public class ATMTransactions {
                 performMoneyDeposit();
                 break;
             case 3:
-            performCheckBalance();
+                performCheckBalance();
                 break;
             case 4:
                 performExit();
@@ -152,7 +152,7 @@ public class ATMTransactions {
         Scanner input = new Scanner(System.in);
         
         // 2 :: prompt user for money withdrawn
-        System.out.print("Enter money to be withdrawn: ");
+        System.out.print("Enter money to be withdrawn: $");
         withdraw = input.nextDouble(); // 2.2 :: read & store in withdraw
 
         // 3 :: Check using if statemnet to see if there is available balance to Withdraw money
@@ -178,7 +178,7 @@ public class ATMTransactions {
         Scanner input = new Scanner(System.in);
 
         // 2 :: prompt user for amount deposited
-        System.out.print("Enter money to be deposited: ");
+        System.out.print("Enter money to be deposited: $");
         deposit = input.nextDouble(); // 2.2 :: read & store in deposite
 
         // 3 :: Calculate depostie + balance
