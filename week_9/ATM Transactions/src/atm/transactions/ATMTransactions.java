@@ -23,7 +23,7 @@ public class ATMTransactions {
 
     /*Classes*/
     // c :: Define Classes(c)
-    // c.2 :: Define Main Class
+    // c.1 :: Define Main Class
     public static void main(String[] args) {
         /*Main*/
         // Main :: Call Classes
@@ -47,7 +47,7 @@ public class ATMTransactions {
 
     }
 
-    // c.3 :: Define printHeadings()
+    // c.2 :: Define printHeadings()
     public static void printHeadings() {
         // 1 :: Create Date object
         Date date = new Date();
@@ -59,7 +59,7 @@ public class ATMTransactions {
         System.out.println("******************************************\n");
     }
 
-    // c.4 :: Define checkLogIn()
+    // c.3 :: Define checkLogIn()
     public static void checkLogIn() {
         // 1 :: prompt user for login (-Heading-)
         System.out.println("Check Log In: Check User Name and Password");
@@ -82,19 +82,94 @@ public class ATMTransactions {
 
             // 5.3 :: prompt user for UserName
             System.out.print("Please Enter User Name: ");
-            userName = input.nextLine();
+            userName = input.nextLine(); // 5.4 read & store in userName
             
-            // 5.4 :: prompt user for PassWord
+            // 5.5 :: prompt user for PassWord
             System.out.print("Please Enter Password: ");
-            passWord = input.nextLine();
-            
-            // Check if user has the correct Username and Password
+            passWord = input.nextLine(); // 5.6 :: read & store in passWord
+
+            // 5.7 :: Check using if statement to see if user has correct Username and Password
             // Note: User Name is case-insensitive while Password is Case sensitive
             if ( (userName.equalsIgnoreCase(USERNAME) && passWord.equals(PASSWORD)) ){
                 System.out.println ("\n*** Welcome to Chase ATM Machine ***\n");
             } // close for 
         } // close while loop
 
+    }
+
+    // c.4 :: Define printATMMainMenu()
+    public static void printATMMainMenu() {
+        // 1 :: print Main Menu
+        System.out.println("\n***********************************************");
+        System.out.println("******* Automated Teller Machine (ATM) ********");
+        System.out.println("********----------------------------***********");
+        System.out.println("*********  1) Choose 1 for Withdraw  **********"); // 1.2 :: print option 1
+        System.out.println("********** 2) Choose 2 for Deposit ************"); // 1.3 :: print option 2
+        System.out.println("********** 3) Choose 3 for Check Balance ******"); // 1.4 :: print option 3
+        System.out.println("********** 4) Choose 4 for EXIT  **************"); // 1.5 :: print option 4
+        System.out.println("***********************************************\n");
+
+    }
+
+    // c.5 :: Define checkUserChoice()
+    public static void checkUserChoice() {
+        // 1 :: Create Scanner input
+        Scanner input = new Scanner(System.in);
+
+        // 2 :: Use while loop to check the users choice
+        while (choice != 1 && choice != 2 && choice != 3 && choice != 4 ) {
+            // 2.2 :: prompt user for choice
+            System.out.print("Choose from ATM Menu the Operation you want to perform: ");
+            choice = input.nextInt(); // 2.3 :: read & store in choice
+        }
+    }
+
+    // c.6 :: Define performATMOperation()
+    public static void  performATMOperation() {
+        // 1 :: Use switch case for choice
+        switch(choice) {
+            case 1:
+                performMoneyWithdraw();
+                break;
+            case 2: 
+                performMoneyDeposit();
+                break;
+            case 3:
+            performCheckBalance();
+                break;
+            case 4:
+                performExit();
+                break;
+            default:
+                System.out.println("** Invalid Choice. Please choose from ATM Menu**");
+                break;
+        }
+    }
+
+    // c.7 :: Define  performMoneyWithdraw()
+    public static void  performMoneyWithdraw() {
+        // 1 :: Create Scanner input 
+        Scanner input = new Scanner(System.in);
+        
+        // 2 :: prompt user for money withdrawn
+        System.out.print("Enter money to be withdrawn: ");
+        withdraw = input.nextDouble(); // 2.2 :: read & store in withdraw
+
+        // 3 :: Check using if statemnet to see if there is available balance to Withdraw money
+        if (balance >= withdraw) {
+            // 3.2 :: Calculate withdraw
+            balance = balance - withdraw;
+
+            // 3.3 :: 
+            System.out.printf("Please collect your money $%.2f %n", withdraw); // 3.3 :: 
+            System.out.printf("Your Balance is now = $%.2f %n", balance);
+
+        }
+        else {
+            // 3.4 :: else, no available balance, print ‘Insufficient Balance”
+            System.out.println("Insufficient Balance");
+        }
+        System.out.println(""); // Blank line
     }
 
     // c. :: Define printFooters()
