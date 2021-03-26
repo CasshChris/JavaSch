@@ -157,7 +157,7 @@ public class ATMTransactions {
 
         // 3 :: Check using if statemnet to see if there is available balance to Withdraw money
         if (balance >= withdraw) {
-            // 3.2 :: Calculate withdraw
+            // 3.2 :: Calculate balance - withdraw
             balance = balance - withdraw;
 
             // 3.3 :: 
@@ -170,6 +170,38 @@ public class ATMTransactions {
             System.out.println("Insufficient Balance");
         }
         System.out.println(""); // Blank line
+    }
+
+    // c.8 :: Define performMoneyDeposit()
+    public static void performMoneyDeposit() {
+        // 1 :: Create Scanner input
+        Scanner input = new Scanner(System.in);
+
+        // 2 :: prompt user for amount deposited
+        System.out.print("Enter money to be deposited: ");
+        deposit = input.nextDouble(); // 2.2 :: read & store in deposite
+
+        // 3 :: Calculate depostie + balance
+        balance = balance + deposit;
+
+        // 4 :: tell user the transactions was sucessful
+        System.out.println("Your Money has been successfully depsited");
+        System.out.printf("Your Balance is now = $%.2f %n", balance); // 4.2 :: print new balance
+        System.out.println(""); // Blank line
+    }
+
+    // c.9 :: Define performCheckBalance()
+    public static void performCheckBalance() {
+        // 1 :: print user Balance
+        System.out.printf("Your Balance now is = $%.2f %n " , balance);
+        System.out.println(""); // Blank line
+        
+    }
+
+    // c.10 :: Define performExit()
+    public static void performExit() {
+        System.out.println("** You have Exited the ATM Machineprogram **");
+        System.exit(0);
     }
 
     // c. :: Define printFooters()
