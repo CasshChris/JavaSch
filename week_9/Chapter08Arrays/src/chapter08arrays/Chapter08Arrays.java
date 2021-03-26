@@ -3,13 +3,12 @@
  * Programmer: Student - Christian Alvarez
  * Date: 03-19-2021
  */
-
 package chapter08arrays;
 
 public class Chapter08Arrays {
 
     public static void main(String[] args) {
-        //
+        // 
         String [] daysOfWeek = {"Monday", "Tuesday", "Wedneaday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"};
 
         int [] scores = {100, 77, 99, 88, 55, 44, 66, 58, 84};
