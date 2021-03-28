@@ -121,7 +121,17 @@ public class MathNumbersform extends javax.swing.JFrame {
         String strNumber1, strNumber2, strResult;
         int number1, number2, result;
 
-        // 2 :: 
+        // 2 :: Get test form text box
+        strNumber1 = txtNumber1.getName();
+        strNumber2 = txtNumber2.getText();
+
+        // 3 :: Covert from string to int
+        number1 = Intger.parseInt(strNumber1);
+        number2 = Intger.parseInt(strNumber2);
+
+        // 4 :: Calculate the sum in result
+        
+
     }
 
     private void txtFirstNumberActionPerformed(java.awt.event.ActionEvent evt) {
