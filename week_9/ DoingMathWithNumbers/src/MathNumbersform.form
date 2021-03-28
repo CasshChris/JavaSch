@@ -39,8 +39,8 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="lblResult" min="-2" pref="136" max="-2" attributes="0"/>
                           <Component id="txtUserName" max="32767" attributes="0"/>
-                          <Component id="txtFirstNumber" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtSecondNumber" min="-2" pref="152" max="-2" attributes="0"/>
+                          <Component id="txtNumber1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtNumber2" min="-2" pref="152" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -59,17 +59,17 @@
               <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblFirstNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFirstNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNumber1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSecondNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNumber2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblResultText" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblResult" alignment="0" min="-2" pref="15" max="-2" attributes="0"/>
+                  <Component id="lblResultText" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="42" max="32767" attributes="0"/>
               <Component id="btnAdd" min="-2" max="-2" attributes="0"/>
@@ -128,24 +128,24 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUserNameActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFirstNumber">
+    <Component class="javax.swing.JTextField" name="txtNumber1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFirstNumberActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumber1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtSecondNumber">
+    <Component class="javax.swing.JTextField" name="txtNumber2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSecondNumberActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumber2ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnAdd">
