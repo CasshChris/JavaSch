@@ -35,7 +35,6 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
         btnMin = new javax.swing.JButton();
         btnMax = new javax.swing.JButton();
         lblOperator = new javax.swing.JLabel();
-        lblThanks = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -152,29 +151,24 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
                             .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(33, 33, 33))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblThanks, javax.swing.GroupLayout.PREFERRED_SIZE, 436, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel1))
-                                .addGap(163, 163, 163)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblOperator, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                                    .addComponent(txtUserName, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                                    .addComponent(txtNumber1)
-                                    .addComponent(txtNumber2)
-                                    .addComponent(lblResult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel1))
+                        .addGap(163, 163, 163)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblOperator, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                            .addComponent(txtUserName, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                            .addComponent(txtNumber1)
+                            .addComponent(txtNumber2)
+                            .addComponent(lblResult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(63, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblThanks, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -204,7 +198,7 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
                     .addComponent(btnDivde)
                     .addComponent(btnExit)
                     .addComponent(btnMax))
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
@@ -213,14 +207,12 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
     private void btnMultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplyActionPerformed
         /*Multiply*/
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strResult, strName; // side: strName is something extra on the sidde
+        String strNumber1, strNumber2, strResult;
         int number1, number2, result;
 
         // 2 :: Get test form text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
@@ -235,23 +227,20 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
         // 6 :: Print strResult with lblResult
         lblResult.setText(strResult);
 
-        // 7 :: show the user the operator type & print thank you message
+        // 7 :: show the user the operator type 
         lblOperator.setText("Multiplication");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
         
     }//GEN-LAST:event_btnMultiplyActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         /*Addition*/
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strResult, strName; // side: strName is something extra on the sidde
+        String strNumber1, strNumber2, strResult;
         int number1, number2, result;
 
         // 2 :: Get test form text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
@@ -266,9 +255,8 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
         // 6 :: Print strResult with lblResult
         lblResult.setText(strResult);
 
-        // 7 :: show the user the operator type & print thank you message
+        // 7 :: show the user the operator type 
         lblOperator.setText("Addition");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
 
     }//GEN-LAST:event_btnAddActionPerformed
 
@@ -280,45 +268,40 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
     private void btnSubtractActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtractActionPerformed
         /*Min*/
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strMin, strName; // side: strName is something extra on the sidde
-        int number1, number2, minNumber;
+        String strNumber1, strNumber2, strResult;
+        int number1, number2, result;
 
         // 2 :: Get text from text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
         number2 = Integer.parseInt(strNumber2);
 
         // 4 :: Calculate the Difference & store in result
-        minNumber = Math.min(number1, number2);
+        result = number1 - number2;
 
         // 5 :: convert result into string & store it in strResult
-        strMin = String.format("%s", minNumber);
+        strResult = String.format("%s", result);
 
         // 6 :: Print strResult with lblResult
-        lblResult.setText(strMin);
+        lblResult.setText(strResult);
 
-        // side: show the user the operator type & print thank you message
-        lblOperator.setText("Min");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
+        // side: show the user the operator type
+        lblOperator.setText("Subtraction");
 
     }//GEN-LAST:event_btnSubtractActionPerformed
 
     private void btnDivdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivdeActionPerformed
         /*Division*/
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strResult, strName; // side: strName is something extra on the sidde;
+        String strNumber1, strNumber2, strResult;
         int number1, number2, result;
 
         // 2 :: Get test form text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
@@ -335,7 +318,6 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
 
         // 7 :: show the user the operator type
         lblOperator.setText("Division");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
 
     }//GEN-LAST:event_btnDivdeActionPerformed
 
@@ -347,50 +329,44 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
         txtUserName.setText("");
         lblOperator.setText("");
         lblResult.setText("");
-        lblThankYouMessage.setText("");
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnMinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinActionPerformed
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strResult, strName; // side: strName is something extra on the sidde
-        int number1, number2, result;
+        String strNumber1, strNumber2, strResult;
+        int number1, number2, minNumber;
 
         // 2 :: Get test form text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
         number2 = Integer.parseInt(strNumber2);
 
         // 4 :: Calculate the Quotient & store in result
-        result = number1 / number2;
+        minNumber = Math.min(number1, number2);
 
         // 5 :: convert result into string & store it in strResult
-        strResult = String.format("%s", result);
+        strResult = String.format("%s", minNumber);
 
         // 6 :: Print strResult with lblResult
         lblResult.setText(strResult);
 
         // 7 :: show the user the operator type
         lblOperator.setText("Min");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
 
     }//GEN-LAST:event_btnMinActionPerformed
 
     private void btnMaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMaxActionPerformed
         /*Max*/
         // 1 :: Declare variables for project
-        String strNumber1, strNumber2, strMax, strName; // side: strName is something extra on the sidde
+        String strNumber1, strNumber2, strResult;
         int number1, number2, maxNumber;
 
         // 2 :: Get test form text box
         strNumber1 = txtNumber1.getText();
         strNumber2 = txtNumber2.getText();
-        // side: Get text from text box
-        strName = txtUserName.getText();
 
         // 3 :: Covert from string to int
         number1 = Integer.parseInt(strNumber1);
@@ -400,14 +376,13 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
         maxNumber = Math.max(number1, number2);
 
         // 5 :: convert result into string & store it in strResult
-        strMax = String.format("%s", maxNumber);
+        strResult = String.format("%s", maxNumber);
 
         // 6 :: Print strResult with lblResult
-        lblResult.setText(strMax);
+        lblResult.setText(strResult);
 
         // 7 :: show the user they are using Max
         lblOperator.setText("Max");
-        lblThankYouMessage.setText("Thank you " + strName + " for using my program ");
 
     }//GEN-LAST:event_btnMaxActionPerformed
 
@@ -461,7 +436,6 @@ public class DoingMathWithNumbersForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblOperator;
     private javax.swing.JLabel lblResult;
-    private javax.swing.JLabel lblThanks;
     private javax.swing.JTextField txtNumber1;
     private javax.swing.JTextField txtNumber2;
     private javax.swing.JTextField txtUserName;
