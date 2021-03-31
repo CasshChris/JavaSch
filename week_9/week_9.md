@@ -9,4 +9,4 @@
 - [x] MilesRunArray p. 592
 - [x] ATMTransactions p. 599 
     - [] *modify*
-- [ ] DoingMathOn2NumberUsingMethods p. 618
+- [x] DoingMathOn2NumberUsingMethods p. 618
