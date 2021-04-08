@@ -1,3 +1,8 @@
+/**
+ * Project Name: Array Sort
+ * Progammer: Christian Alvarez - Student
+ * Date: 03-29-2021
+ */
 package arraryssort;
 /*Arrays*/
 // import Arrays class

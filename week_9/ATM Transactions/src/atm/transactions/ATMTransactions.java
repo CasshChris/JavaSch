@@ -75,25 +75,36 @@ public class ATMTransactions {
         System.out.print("Please Enter Password: ");
         passWord = input.nextLine(); // 4.2 :: read & store in passWord
 
-        // 5 :: Use while loop if the user entered wrong login
-        while ( !(userName.equalsIgnoreCase(USERNAME) && passWord.equals(PASSWORD)) ){
-            // 5.2 :: prompt user for correct login
+        // 5 :: use count to limit time users can login
+        int count = 0;
+        
+        // 5.2 :: Use while loop if the user entered wrong login
+        while ( !(userName.equalsIgnoreCase(USERNAME) && passWord.equals(PASSWORD) ) && count <= 2 ){
+            // 5.3 :: prompt user for correct login
             System.out.println("Your User Name or Password are Wrong. Please Try again");
 
-            // 5.3 :: prompt user for UserName
+            // 5.4 :: prompt user for UserName
             System.out.print("Please Enter User Name: ");
-            userName = input.nextLine(); // 5.4 read & store in userName
+            userName = input.nextLine(); // 5.5 read & store in userName
             
-            // 5.5 :: prompt user for PassWord
+            // 5.6 :: prompt user for PassWord
             System.out.print("Please Enter Password: ");
-            passWord = input.nextLine(); // 5.6 :: read & store in passWord
+            passWord = input.nextLine(); // 5.7 :: read & store in passWord
 
-            // 5.7 :: Check using if statement to see if user has correct Username and Password
+            // 5.8 :: +1 to count, meaning no less time user can sign in
+            count += 1;
+            
+            // 5.9 :: Check using if statement to see if user has correct Username and Password
             // Note: User Name is case-insensitive while Password is Case sensitive
             if ( (userName.equalsIgnoreCase(USERNAME) && passWord.equals(PASSWORD)) ){
                 System.out.println ("\n*** Welcome to Chase ATM Machine ***\n");
-            } // close for 
-        } // close while loop
+            }
+            // 5.10 :: tell user they have no more tries to login
+            else if (count == 2) {
+                System.out.println("Sorry, try again in three hours");
+                System.exit(0);
+            }
+        } 
 
     }
 

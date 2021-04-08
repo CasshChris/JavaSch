@@ -59,6 +59,4 @@ public class Chapter08Arrays {
             System.out.println(score);
         }
     }
-
-    
 }

@@ -8,5 +8,5 @@
 - [x] SumNumberInArray p. 587
 - [x] MilesRunArray p. 592
 - [x] ATMTransactions p. 599 
-    - [] *modify*
+    - [x] *modify*
 - [x] DoingMathOn2NumberUsingMethods p. 618
