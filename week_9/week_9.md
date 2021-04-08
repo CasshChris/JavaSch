@@ -1,4 +1,5 @@
 # Week 9 Checklist
+> Week 9 & Week 10 are the same
 
 ### Projects
 
