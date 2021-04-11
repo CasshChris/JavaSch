@@ -8,4 +8,4 @@
 - [x] Calculate Average of 2 tests .p.372
 - [x] Calculate Gross Pay From .p.381
 - [x] Convert Celsius to Fahrenheit .p.392 
-- [ ] Display date & time From .p.396
+- [x] Display date & time From .p.396
