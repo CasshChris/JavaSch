@@ -70,7 +70,7 @@ public class CalcuateSumMethods {
             secondNumber = input.nextInt();
 
             //14) Echo back what the user entered
-            System.out.println("YourSecond Number is : " + secondNumber);
+            System.out.println("Your Second Number is : " + secondNumber);
         }
 
             // 3) Define and Code sum() methodto sum the numbers
@@ -89,13 +89,13 @@ public class CalcuateSumMethods {
                 //15) Find the Subtraction of the two numbers
                 result = firstNumber -secondNumber;
                 //16) Print out First and Last name(Full Name)
-                System.out.println("TheuserFullNameis:"+firstName+" "+lastName);
+                System.out.println("The user Full Name is:"+firstName+" "+lastName);
                 //17) Print out the Sum of the First and Second Numbers
                 System.out.println("The Subtraction of the two numbers is: " + result);
             }
 
             // 5) Define and Code printFootings() method
             public static void printFootings() {
-                System.out.println("\n This is Footings\n");
+                System.out.println("\n******** End Of Project *********\n");
             }
 }
