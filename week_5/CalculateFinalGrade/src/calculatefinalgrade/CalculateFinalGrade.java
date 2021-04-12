@@ -7,8 +7,6 @@ package calculatefinalgrade;
 // i :: import Scanner
 import java.util.Scanner;
 
-import jdk.javadoc.internal.doclets.formats.html.resources.standard;
-
 public class CalculateFinalGrade {
     /*Global*/
     // 1 :: Create global "input" object
@@ -47,6 +45,7 @@ public class CalculateFinalGrade {
 
     }
 
+    // Define printHeadings()
     public static void printHeadings() {
         // 1 :: print header
         System.out.println("************************************************");
@@ -55,16 +54,42 @@ public class CalculateFinalGrade {
         System.out.println();    // print a Blank Line
     }
 
+    // Define promptUserForInputDate
     public static void promptUserForInputData() {
-        // 1 :: prompt user for full name
+        // 1 :: Prompt user for full name
         System.out.print("Enter your Full Name: ");
         fullName = input.nextLine();
 
-        // 2 :: prompt user for test 1 & store it
-        System.out.print("Please enter test 1( Between 0 - 100): ");
+        // 2 :: Prompt user for test 1 & store it
+        System.out.print("Please enter test 1(Between 0 - 100): ");
         test1 = input.nextInt();
 
-        // 3 :: 
+        // 3 :: Prompt user for test 1 & store it
+        System.out.print("Please enter test 2 (Between 0 - 100): ");
+        test2 = input.nextInt();
+
+        // 4 :: Call checkUserInputData
+        checkUserInputData();
+
+        String extraNewLine = input.nextLine();
+    }
+
+    public static void checkUserInputData() {
+        // 1 :: use while loop to check if test 1 is vaild
+        while (test1 < 0 || test1 > 100) {
+            // 1.2 :: prompt user for test 1 score & store
+            System.out.print("**Invaild Test 1** Please enter test 1(Between 0 - 100): ");
+            test1 = input.nextInt();
+        }
+        
+        // 2 :: use while loop to check if test 2 is vaild
+        while (test2 < 0 || test2 > 100) {
+            // 2.2 :: prompt user for test 2 score & store
+            System.out.print("**Invaild Test 2** Please enter test 2(Between 0 - 100): ");
+            test2 = input.nextInt();
+        }
+
+        //  
     }
         
 }
