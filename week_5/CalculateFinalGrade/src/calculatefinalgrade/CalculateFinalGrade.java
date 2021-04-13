@@ -15,14 +15,13 @@ public class CalculateFinalGrade {
     // 2 :: Declare global Var
     public static String fullName;
     public static int test1, test2, average;
-    public static String statis;
+    public static String status;
     public static int totalAverage = 0;
     public static int classAverage = 0;
     public static int studentCounter = 0;
     public static int aCounter = 0;
 
     public static void main(String[] args) {
-        /*Main*/
         // Main :: print heading
         printHeadings();
         
@@ -54,7 +53,7 @@ public class CalculateFinalGrade {
         System.out.println();    // print a Blank Line
     }
 
-    // Define promptUserForInputDate
+    // Define promptUserForInputDate()
     public static void promptUserForInputData() {
         // 1 :: Prompt user for full name
         System.out.print("Enter your Full Name: ");
@@ -74,6 +73,7 @@ public class CalculateFinalGrade {
         String extraNewLine = input.nextLine();
     }
 
+    // Define checkUserInputData()
     public static void checkUserInputData() {
         // 1 :: use while loop to check if test 1 is vaild
         while (test1 < 0 || test1 > 100) {
@@ -88,8 +88,25 @@ public class CalculateFinalGrade {
             System.out.print("**Invaild Test 2** Please enter test 2(Between 0 - 100): ");
             test2 = input.nextInt();
         }
-
-        //  
     }
+    
+    // Define findAverageAndStatus()
+    public static void findAverageAndStatus() {
+        // 1 :: Calculate average
+        average = (test1 + test2) / 2;
         
+        // 2 :: find if student is passing or failing
+        if (average >= 70) {
+            status = "Passing";
+        }
+        else {
+            status = "Failing"
+        }
+
+        // 3 :: output to the user
+        System.out.println();
+        System.out.printf("The student %2 test 1 = %d, test 2 = %d %n", fullName, test1, test2);
+        System.out.printf("Student Average = %d and the sudents is %s %n", average, status);
+    }
+
 }
