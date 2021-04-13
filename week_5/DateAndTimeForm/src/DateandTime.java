@@ -6,7 +6,7 @@
 
 // i :: import date & date format
 import java.util.Date;
-import java.util.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 
 public class DateandTime extends javax.swing.JFrame {
 
@@ -48,7 +48,24 @@ public class DateandTime extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void evntWindowOpen(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_evntWindowOpen
-        // 1 :: 
+        // 1 :: Create 'dateFormat' object with SimpleDateFormat
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+
+        // 2 :: Create 'date' object
+        Date date = new Date();
+
+        // 3 :: Display date with lblDate
+        lblDate.setText("" + dateFormat.format(date));
+
+        // 4 :: Create 'timeFormat' object with SimpleDateFormat
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
+
+        // 5 :: Create 'time' object
+        Date time = new Date();
+
+        // 6 :: Display time with lblTime
+        lblTime.setText("" + timeFormat.format(time));
+
     }//GEN-LAST:event_evntWindowOpen
 
     /**
