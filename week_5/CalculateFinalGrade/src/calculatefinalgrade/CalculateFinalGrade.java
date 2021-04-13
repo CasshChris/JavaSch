@@ -100,13 +100,31 @@ public class CalculateFinalGrade {
             status = "Passing";
         }
         else {
-            status = "Failing"
+            status = "Failing";
         }
 
         // 3 :: output to the user
-        System.out.println();
+        System.out.println(); // blank line
         System.out.printf("The student %2 test 1 = %d, test 2 = %d %n", fullName, test1, test2);
         System.out.printf("Student Average = %d and the sudents is %s %n", average, status);
+    }
+
+    // Define footings
+    public static void printFootings() {
+        // 1 :: Calculate class average
+        classAverage = totalAverage / studentCounter;
+
+        // 2 :: output data to user
+        System.out.printf("Total number of student = %d %n", studentCounter);
+        System.out.printf("Class average = %d %n", classAverage);
+        System.out.printf("A students =%d %n", aCounter);
+
+        // 3 :: print footer
+        System.out.println(); // Blank line
+        System.out.println("***************************************************");
+        System.out.println("*************** End of Program ********************");
+        System.out.println("***** Programmer: Christian Alvarez - Student******");
+        System.out.println("***************************************************");
     }
 
 }
