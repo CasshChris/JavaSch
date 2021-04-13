@@ -105,7 +105,7 @@ public class CalculateFinalGrade {
 
         // 3 :: output to the user
         System.out.println(); // blank line
-        System.out.printf("The student %2 test 1 = %d, test 2 = %d %n", fullName, test1, test2);
+        System.out.printf("The student %s test 1 = %d, test 2 = %d %n", fullName, test1, test2);
         System.out.printf("Student Average = %d and the sudents is %s %n", average, status);
     }
 
@@ -117,7 +117,7 @@ public class CalculateFinalGrade {
         // 2 :: output data to user
         System.out.printf("Total number of student = %d %n", studentCounter);
         System.out.printf("Class average = %d %n", classAverage);
-        System.out.printf("A students =%d %n", aCounter);
+        System.out.printf("A students = %d %n", aCounter);
 
         // 3 :: print footer
         System.out.println(); // Blank line
