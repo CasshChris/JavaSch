@@ -96,15 +96,35 @@ public class CalculateSumMethod {
         
         // 3 :: output the result
         System.out.println("The Subtraction of the two numbers is: " + result);
-
+        
     }
     
+    // Define calculateProduct()
+    public static void calculateProduct() {
+       // 1 :: Calculate product & store in "result"
+       result = firstNumber * secondNumber;
+        
+       // 2 :: output the users full name
+       System.out.println("The user Full Name is: " + firstName + " " + lastName);
+       
+       // 3 :: output the result
+       System.out.println("The Subtraction of the two numbers is: " + result);
+        
+    }
+    
+    // Define calculatedDivision()
+    public static void calculatedDivision() {}
+    
+    // Define calculateAverage()
+    public static void calculateAverage() {}
+    
+    // Define calculateModulus()
+    public static void calculateModulus() {}
     
     // Define printFootings()
     public static void printFootings() {
         System.out.println ("\n This is Footings\n");
     }
 
-    // public static void () {}
     
 }
