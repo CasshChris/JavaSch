@@ -108,22 +108,46 @@ public class CalculateSumMethod {
        System.out.println("The user Full Name is: " + firstName + " " + lastName);
        
        // 3 :: output the result
-       System.out.println("The Subtraction of the two numbers is: " + result);
+       System.out.println("The Product of the two numbers is: " + result);
         
     }
     
     // Define calculatedDivision()
-    public static void calculatedDivision() {}
+    public static void calculatedDivision() {
+        // 1 :: Calculate Division & store in "result"
+        result = firstNumber / secondNumber;
+         
+        // 2 :: output the users full name
+        System.out.println("The user Full Name is: " + firstName + " " + lastName);
+        
+        // 3 :: output the result
+        System.out.println("The Division of the two numbers is: " + result);
+        
+    }
     
     // Define calculateAverage()
-    public static void calculateAverage() {}
+    public static void calculateAverage() {
+        // 1 :: Calculate Average & store in "result"
+        result = (firstNumber + secondNumber) / 2;
+         
+        // 2 :: output the users full name
+        System.out.println("The user Full Name is: " + firstName + " " + lastName);
+        
+        // 3 :: output the result
+        System.out.println("The Average of the two numbers is: " + result);
+
+    }
     
     // Define calculateModulus()
     public static void calculateModulus() {}
     
     // Define printFootings()
     public static void printFootings() {
+        System.out.println ("\n********************************\n");
+        System.out.println ("\n********************************\n");
         System.out.println ("\n This is Footings\n");
+        System.out.println ("\n********************************\n");
+        System.out.println ("\n********************************\n");
     }
 
     
