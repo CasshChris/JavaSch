@@ -1,0 +1,48 @@
+btnShowActionPerformed:
+
+// Show Photo
+lblPhoto.setVisible(true)
+
+btnHideActionPerformed:
+
+// Hide Photo
+lblPhoto.setVisible(false);
+
+btnCalculateGrossPayActionPerformed:
+
+// public static Scanner input = new Scanner (System.in);
+// declare variables - this is the calculate button
+
+int hours = 000;
+double rate = 00.00; 
+String strName, strHours, strRate;
+double grossPay = 0000.00;
+double overtime = 0000.00;
+String strOverTime; 
+//String strGrossPay;
+
+//get value from textbox 
+strName = txtName.getText();
+strHours = txtHours.getText();
+strRate = txtRate.getText();
+
+//chage value from textbox to pasreInt
+
+Name = Integer.parseInt(strName);
+hours = Integer.parseInt(strHours);
+
+//use double Double.parseDouble()
+rate = Double.parseDouble(strRate);
+
+// calculate  
+
+if (hours > 40) {
+   grossPay=40*rate+(hours-40)*rate*1.5;
+   lblGrossPay.setText ("" + grossPay);
+   lblMessage.setText("Overtime");
+}
+else {
+   grossPay = hours*rate;
+   lblGrossPay.setText (" "+ grossPay);
+   lblMessage.setText (" ");
+}

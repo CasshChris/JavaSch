@@ -34,6 +34,7 @@ public class ConvertFromCelsiusToFahForm extends javax.swing.JFrame {
         lblMessage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Convert Celsius to Fahrenhiet");
 
         btnCelsiusToFahrenheit.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnCelsiusToFahrenheit.setText("Convert Celsius to Fahrenheit");

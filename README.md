@@ -10,9 +10,9 @@ My Professor is *Professor Ogar Haji* of **Wilbur Wright College**
 - [x] week_2
 - [x] week_3
 - [x] week_4
-- [ ] week_5
+- [x] week_5
 - [ ] week_6
-- [ ] week_7
+- [x] week_7
 - [x] week_8
 - [x] week_9
 - [x] Week_10
