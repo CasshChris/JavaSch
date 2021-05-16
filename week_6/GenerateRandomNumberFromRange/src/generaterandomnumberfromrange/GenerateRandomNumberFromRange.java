@@ -19,10 +19,13 @@ public class GenerateRandomNumberFromRange {
     // Define main function
     public static void main(String[] args) {
         // 1 :: Declare variables
-        String promptAnswer;
+        String promptAnswer = "y";
         
         // 1 :: Call printHeading()
         printHeading();
+        
+        // 5 :: Use while loop to continue if promptAnswer is yes
+        while ("y".equals(promptAnswer)) {
         
         // 2 :: Call promptUserForInput()
         promptUserForInput();
@@ -37,8 +40,6 @@ public class GenerateRandomNumberFromRange {
         System.out.printf("%nDo You Want to Continue(y/n)? : ");
         promptAnswer = input.nextLine();
         
-        // 5 :: Use while loop to continue if promptAnswer is yes
-        while ("y".equals(promptAnswer)) {
             // 6 :: Call promptUserForInput()
             promptUserForInput();
             
@@ -68,6 +69,8 @@ public class GenerateRandomNumberFromRange {
         // 2 :: Prompt user for second number
         System.out.print("Enter the Ending Number of the range: ");
         endNumber = input.nextInt();
+        input.nextLine(); // Blank
+
     }
     
     public static void generateRandomNumbers() {
