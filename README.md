@@ -11,10 +11,16 @@ My Professor is *Professor Ogar Haji* of **Wilbur Wright College**
 - [x] week_3
 - [x] week_4
 - [x] week_5
-- [ ] week_6
+- [x] week_6
 - [x] week_7
 - [x] week_8
 - [x] week_9
 - [x] Week_10
+- [x] Week_11
+- [x] Week_12
+- [ ] Week_13
+- [ ] Week_14
+- [x] Week_15
+- [x] final-project
 
 **Spring 2021**
