@@ -3,6 +3,7 @@
  * Programmer: Student - Christian Alvarez
  * Date: 04-15-2021
  */
+
 package arraylistcolors;
 // i :: import classes
 import java.util.ArrayList; // import ArrayList
